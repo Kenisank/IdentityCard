@@ -17,10 +17,19 @@ namespace IdentityCard.Controllers
         {
             _logger = logger;
         }
+        
 
-        public IActionResult Index()
+
+        [HttpGet]
+        public IActionResult Generate()
         {
-            return View();
+            return View("Index");
+        }
+
+        [HttpPost]
+        public IActionResult Generate(Card card)
+        {
+            return View("generate", card);
         }
 
         public IActionResult Privacy()
