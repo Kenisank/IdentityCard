@@ -29,6 +29,8 @@ namespace IdentityCard.Controllers
             return View("Index");
         }
 
+      
+
         [HttpPost]
         public IActionResult Generate(Card card)
         {
@@ -50,7 +52,7 @@ namespace IdentityCard.Controllers
                 card.Photo.CopyTo(stream);
                 // uploadedFile.Add(fileName);
                 //  ViewBag.Message += fileName ;
-                card.file = fileName;
+                ViewBag.Message = fileName;
             }
 
             return View("generate", card);

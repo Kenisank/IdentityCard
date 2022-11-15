@@ -14,7 +14,7 @@ namespace IdentityCard.Models
         public string EmployeeID { get; set; }
         public string EmployeeName { get; set; }
         public IFormFile Photo { get; set; }
-        public string file { get; set; }
+        public string Phone { get; set; }
       //  public HttpPostedFile ImageFile { get; set; }
         public string Position { get; set; }
     }

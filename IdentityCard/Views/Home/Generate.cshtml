@@ -40,7 +40,7 @@
 
 
     <div class="card">
-        <img src="img.jpg" alt="John" style="width:100%">
+        <img src="/uploads/@ViewBag.Message" alt="John" style="width:100%">
         <h1>@Html.DisplayFor(model => model.EmployeeName)</h1>
         <p class="title">@Html.DisplayFor(model => model.Position), </p>
         <p>@Html.DisplayFor(model => model.EmployeeID) </p>
@@ -48,7 +48,7 @@
         <a href="#"><i class="fa fa-twitter"></i></a>
         <a href="#"><i class="fa fa-linkedin"></i></a>
         <a href="#"><i class="fa fa-facebook"></i></a>*@
-        <p><button>0813 *** ****</button></p>
+        <p><button>@Html.DisplayFor(model => model.Phone)</button></p>
     </div>
 </div>
 <div>
